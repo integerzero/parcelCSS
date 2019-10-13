@@ -1,0 +1,29 @@
+/*
+
+-Matches
+
+li:matches(:nth-child(even), .target) {
+    background-color: blue;
+}
+
+-NOT
+
+li:not(.target) {
+    background-color: red;
+}
+
+*/
+
+:root{
+    --awesomeColor: #2980b9;
+}
+
+li:first-child a {
+    color: var(--awesomeColor);
+}
+
+@custom-selector :--headers h1,h2,h3,h4,h5;
+
+:--headers {
+    color: #8e44ad;
+}
